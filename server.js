@@ -13,7 +13,7 @@ const path = require('path')
 app.use(compress());
 
 // Static file server on public
-app.use(express.static(__dirname + '/dist', {
+app.use(express.static(path.join(__dirname,'dist'), {
 	maxAge: oneDay
 }));
 
@@ -26,7 +26,7 @@ app.use(function(req, res) {
 */
 
 app.get('/*', function(req,res) {
-	res.sendFile(path.join(__dirname + 'dist/index.html'));
+	res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // Fire it up!
