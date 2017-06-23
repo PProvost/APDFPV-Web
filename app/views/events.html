@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-md-10 col-md-offset-1 jumbotron">
+      
+      <h2>Upcoming Events</h2>
+			<p>Click on an event below to go to the event info and signup page.</p>
+
+      <div class="list-group">
+         <div class="spin spin-gleam" data-spin></div>
+				 <a class="list-group-item" ng-repeat="item in feed.items" href="{{item.link}}"> <h3 class="list-group-item-heading">{{item.title}}</h3> <p class="list-group-item-text text-muted small">{{item.description}}</p></a>,
+      </div>
+   </div>
+</div>

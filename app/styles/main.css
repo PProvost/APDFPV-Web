@@ -1,0 +1,48 @@
+html,body {
+	color: #000;
+	height: 100%;
+	background: #333 url('/images/302_9256-Edit.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	padding-top: 65px;
+}
+
+.row {
+	padding-bottom: 25px;
+}
+
+.navbar-brand img {
+	height: 30px;
+}
+
+.jumbotron {
+	margin-top: 15px;
+	background-color: rgba(0,0,0,0.65);
+	color: #ddd;
+	text-shadow: none;
+}
+
+.primary {
+}
+
+.main-content {
+	text-align: center;
+}
+
+#rss-feeds {
+	margin-top: 35px;
+}
+
+.list-group ul {
+	padding-left: 0;
+}
+
+.thumbnail.pull-left {
+	margin-right: 30px;
+}
+
