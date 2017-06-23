@@ -17,15 +17,17 @@ app.use(express.static(__dirname + '/dist', {
 	maxAge: oneDay
 }));
 
-// Custom 404 handler
-app.use(function(req, res) {
-    res.status(404);
-    res.sendfile(__dirname + "/dist/404.html");
+app.get('/*', function(req,res) {
+	res.sendFile('index.html');
 });
 
-app.get('/*', function(req,res) {
-	res.sendFile(path.join(__dirname + 'dist/index.html'));
+// Custom 404 handler
+/*
+app.use(function(req, res) {
+    res.status(404);
+    res.sendfile('/404.html');
 });
+*/
 
 // Fire it up!
 app.listen(process.env.PORT || 8080);
