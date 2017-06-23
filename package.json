@@ -13,6 +13,7 @@
     "npm": "5.0.3"
   },
   "scripts": {
+    "start": "node server.js",
     "postinstall": "bash ./post_install.sh"
   },
   "dependencies": {
@@ -48,6 +49,7 @@
     "inherits": "^2.0.3",
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.2",
-    "time-grunt": "^1.4.0"
+    "time-grunt": "^1.4.0",
+    "unpipe": "^1.0.0"
   }
 }
