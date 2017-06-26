@@ -1,11 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>APD FPV Tier 1 Rotocross</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+   <meta charset="utf-8">
+   <title>APD FPV Tier 1 Rotocross</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width">
+   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="/manifest.json">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="theme-color" content="#ffffff">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -32,7 +38,7 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="#">
-							<span><img alt="APD" src="images/APD-Logo-v5-darkbg.svg">APD FPV Tier 1 Rotocross</span>
+                     <span><img alt="APD" src="images/APD-Logo-v5-darkbg.svg"><span class="hidden-xs">APD FPV Tier 1 Rotocross</span></span>
 						</a>
 					</div>
 					<div id="navbar" class="collapse navbar-collapse navbar-right">
@@ -40,7 +46,7 @@
 							<li class="active"><a href="#">Home</a></li>
 							<li><a href="#!/about">About</a></li>
 							<li><a href="#!/events">Events</a></li>
-							<li><a href="#!/contact">Contact</a></li>
+							<li><a href="mailto:aurorafpv@gmail.com">Contact</a></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</div>
@@ -81,6 +87,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/spin/javascripts/jquery.spin.js"></script>
+    <script src="bower_components/inherits/inherits.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
