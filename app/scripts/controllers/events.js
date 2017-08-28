@@ -11,7 +11,7 @@ angular.module('angularTestApp')
   .controller('EventsCtrl', function ($scope, $http) {
     $('.spin').spin();
 		
-		var url = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20"http%3A%2F%2Fwww.multigp.com%2Fmultigp%2Fchapter%2Frss%2Fname%2FAuroraFPV"&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&_maxage=3600';
+		var url = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20"http%3A%2F%2Fwww.multigp.com%2Fmgp%2Fmultigp%2Fchapter%2Frss%2Fname%2FAuroraFPV%2F"&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&_maxage=3600';
 
 		$http.get(url).then(function(response) {
         $scope.feed = {
